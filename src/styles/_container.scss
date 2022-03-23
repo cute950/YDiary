@@ -1,0 +1,18 @@
+@use "/src/styles/_function" as *;
+@use "/src/styles/_media" as *;
+@use "/src/styles/_variables" as *;
+
+.container {
+    max-width: rem(1440);
+    width: 100%;
+    padding: rem(40) rem(30);
+    margin: 0 auto;
+
+    @include min-media('t') {
+        padding: rem(60) rem(60);
+    }
+
+    @include min-media('xl') {
+        padding: rem(70) rem(134) rem(70);
+    }
+}

@@ -1,0 +1,83 @@
+@use "/src/styles/_function" as *;
+@use "/src/styles/_media" as *;
+@use "/src/styles/_variables" as *;
+
+/* text styles */
+.heading-1 {
+    font: 700 rem(28)/rem(33) 'Gilroy', sans-serif;
+
+    @include min-media('t') {
+        font-size: rem(48);
+        line-height: rem(58)
+    }
+
+    @include min-media('xl') {
+        font-size: rem(54);
+        line-height: rem(65)
+    }
+}
+
+.heading-2 {
+    font: 700 rem(20)/rem(27) 'Gilroy', sans-serif;
+
+    @include min-media('t') {
+        font-size: rem(32);
+        line-height: 132%;
+    }
+
+    @include min-media('xl') {
+        font-size: rem(34);
+        line-height: rem(45);
+    }
+}
+
+.heading-3 {
+    font: 700 rem(28)/rem(34) 'Gilroy', sans-serif;
+
+    @include min-media('t') {
+        font-size: rem(32);
+        line-height: 132%;
+    }
+
+    @include min-media('xl') {
+        font-size: rem(34);
+        line-height: rem(45);
+    }
+}
+
+.heading-4 {
+    font: 700 rem(20)/rem(27) 'Gilroy', sans-serif;
+
+    @include min-media('t') {
+        font-size: rem(24);
+        line-height: rem(29)
+    }
+}
+
+.text-primary {
+    font: 400 rem(14)/rem(22) 'Gilroy', sans-serif;
+
+    @include min-media('t') {
+        font-size: rem(16);
+        line-height: rem(24)
+    }
+}
+
+.text-secondary {
+    font: 600 rem(16)/rem(19) 'Gilroy', sans-serif;
+
+    @include min-media('t') {
+        font-size: rem(16);
+        line-height: rem(24);
+    }
+}
+
+a:not([class]) {
+    color: $color-1;
+    transition: color 0.3s ease;
+
+    &:hover,
+    &:active {
+        color: $color-3;
+    }
+}
